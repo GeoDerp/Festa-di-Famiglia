@@ -1,7 +1,7 @@
 {
-  "name": "11ty-contentful-gallery",
+  "name": "zucco-recipe-book",
   "version": "1.0.0",
-  "description": "Contentful photogallery using 11ty.",
+  "description": "Recipe Website Forked from Contentful",
   "main": "index.js",
   "scripts": {
     "build": "npx eleventy",
@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful/11ty-contentful-gallery.git"
+    "url": "git+https://github.com/GeoDerp/ZuccoRecipeBook.git"
   },
-  "author": "Shy Ruparel",
+  "author": "Shy Ruparel, John Whately",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/contentful/11ty-contentful-gallery/issues"
+    "url": "https://github.com/GeoDerp/ZuccoRecipeBook/issues"
   },
-  "homepage": "https://github.com/contentful/11ty-contentful-gallery#readme",
+  "homepage": "https://github.com/GeoDerp/ZuccoRecipeBook",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.12.1",
     "contentful": "^8.1.7",
     "dotenv": "^8.2.0"
   }

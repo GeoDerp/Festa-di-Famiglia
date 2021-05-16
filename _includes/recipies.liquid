@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="/css/base.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+    .bg-img { 
+        background-image: url({{renderData.thumbnail}}) ;
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: scroll;
+        background-size:  cover;
+        background-color: #527457 !important;
+        background-blend-mode: multiply;
+    
+    }
+    </style>
 </head>
 
 <body>
@@ -16,6 +28,7 @@
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
                     <p class="title is-4 has-text-dark">{{renderData.webTitle}}</p>
+                    <!-- <img src="https:{{contentful-brand.logo.fields.file.url}}?w=200" alt="{{contentful-brand.name}}"> -->
                 </a>
             </div>
             <div class="navbar-end">
@@ -25,18 +38,24 @@
         </nav>
     </header>
     <main>
-        <section class="hero is-info is-fullheight-with-navbar">
-            <div class="hero-body">
-                <div class="container">
-                    {% if renderData.title %}
-                    <h1 class="title has-text-centered">
-                        {{renderData.title}}
-                    </h1>
-                    {%endif%}
-                    {{content}}
-                </div>
+        
+        <section class="hero is-success is-halfheight bg-img">
+        <div class="hero-body">
+            <div class="">
+            <p class="title">
+                {{renderData.title}}
+            </p>
+            <p class="subtitle">
+                {{renderData.subTitle}}
+            </p>
             </div>
+        </div>
         </section>
+
+        <div class="container">
+        {{content}}
+        </div>
+
     </main>
 </body>
 <footer class="footer">

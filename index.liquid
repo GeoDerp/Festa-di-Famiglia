@@ -3,18 +3,19 @@ permalink: "/"
 layout: layout.liquid
 
 renderData:
-    title: "Photo Gallery"
+    title: "Recipes"
+    webTitle: "Zucco Recipe Book"
 
 ---
 
 <div class="columns is-multiline">
-    {%- for photoSet in contentful-photos -%}
+    {%- for recipe in recipes-contentful -%}
     <div class="column is-one-third ">
         <div class="box">
-            <p class="title is-4 has-text-dark">{{photoSet.title}}</p>
-            <a href="{{photoSet.slug}}">
+            <p class="title is-4 has-text-dark has-text-centered">{{recipe.title}}</p>
+            <a href="{{ recipe.title | slug }}">
                 <div class="image is-3by2">
-                    <img src="https:{{photoSet.coverImage.fields.file.url}}?w=400&fm=jpg&fl=progressive&q=80&fit=fill&f=faces" alt="Photo from {{ photoSet.title }}" loading="lazy">
+                    <img src="https:{{recipe.thumbnail.fields.file.url}}?w=600&h=400&fm=jpg&fl=progressive&q=80&fit=fill&f=center" alt="{{ recipe.title }}" loading="lazy">
                 </div>
             </a>
         </div>

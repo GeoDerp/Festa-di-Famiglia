@@ -9,13 +9,13 @@ const client = contentful.createClient({
 // This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
 
 module.exports = async () => {
-    return client.getEntries({ content_type: 'photoSet' }).then(function(response) {
+    return client.getEntries({ content_type: 'recipe' }).then(function(response) {
 
-            const photoSet = response.items
-                .map(function(photoSet) {
-                    return photoSet.fields;
+            const recipe = response.items
+                .map(function(recipe) {
+                    return recipe.fields;
                 });
-            return photoSet;
+            return recipe;
         })
 
         .catch(console.error);
