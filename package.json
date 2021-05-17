@@ -1,7 +1,7 @@
 {
-  "name": "zucco-recipe-book",
+  "name": "Festa-di-Famiglia",
   "version": "1.0.0",
-  "description": "Recipe Website Forked from Contentful",
+  "description": "Static Recipe Website Forked from Contentful powered by Github pages/actions and eleventy",
   "main": "index.js",
   "scripts": {
     "build": "npx eleventy",
