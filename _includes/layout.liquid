@@ -18,31 +18,37 @@
                     <p class="title is-4 has-text-dark">{{renderData.webTitle}}</p>
                 </a>
             </div>
-            <div class="navbar-end">
-                <a class="navbar-item" href="https://github.com/GeoDerp/{{renderData.webTitle | slug}}/"><i class="fab fa-github"></i></a>
-                <a href="/" class='navbar-item'><i class="fas fa-utensils"></i></a>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://github.com/GeoDerp/{{renderData.webTitleSlug}}/"><i
+                            class="fab fa-github"></i></a>
+                    <a href="/" class='navbar-item'><i class="fas fa-utensils"></i></a>
+                </div>
             </div>
         </nav>
     </header>
     <main>
+
+
         <section class="hero is-info is-fullheight-with-navbar">
             <div class="hero-body">
                 <div class="container">
-                    {% if renderData.title %}
                     <h1 class="title has-text-centered">
                         {{renderData.title}}
                     </h1>
-                    {%endif%}
                     {{content}}
                 </div>
             </div>
         </section>
+
+
     </main>
 </body>
 <footer class="footer">
     <div class=" has-text-centered">
-        <p>This Website is forked from Contentful  <a href="https://github.com/contentful/11ty-contentful-gallery/"><i class="fab fa-github is-large"></i></a></p>
-        <p><a href="john.whately.me">My Website</a></p>
+        <p>This Website is forked from Contentful <a href="https://github.com/contentful/11ty-contentful-gallery/"><i
+                    class="fab fa-github is-large"></i></a></p>
+        <p><a href="https://john.whately.me">My Website</a></p>
         <p>©2021 John Whately</p>
     </div>
 </footer>
