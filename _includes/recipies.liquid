@@ -27,7 +27,7 @@
     <header>
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
+                <a class="navbar-item" href="/{{renderData.webTitleSlug}}">
                     <p class="title is-4 has-text-dark">{{renderData.webTitle}}</p>
                     <!-- <img src="https:{{contentful-brand.logo.fields.file.url}}?w=200" alt="{{contentful-brand.name}}"> -->
                 </a>
@@ -36,7 +36,7 @@
                 <div class="navbar-end">
                     <a class="navbar-item" href="https://github.com/GeoDerp/{{renderData.webTitleSlug}}/"><i
                             class="fab fa-github"></i></a>
-                    <a href="/" class='navbar-item'><i class="fas fa-utensils"></i></a>
+                    <a href="/{{renderData.webTitleSlug}}" class='navbar-item'><i class="fas fa-utensils"></i></a>
                 </div>
             </div>
         </nav>
