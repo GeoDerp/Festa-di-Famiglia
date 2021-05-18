@@ -3,9 +3,9 @@ permalink: "/"
 layout: layout.liquid
 
 renderData:
-title: "Recipes"
-webTitle: "Festa di Famiglia"
-webTitleSlug: "Festa-di-Famiglia"
+    title: "Recipes"
+    webTitle: "Festa di Famiglia"
+    webTitleSlug: "Festa-di-Famiglia"
 
 ---
 
@@ -16,7 +16,7 @@ webTitleSlug: "Festa-di-Famiglia"
         <div class="card">
             <div class="card-image">
                 <figure class="image is-4by3">
-                    <img src="https:{{recipe.thumbnail.fields.file.url}}?w=960&h=1280&fm=jpg&fl=progressive&q=80&fit=fill&f=center"
+                    <img src="https:{{recipe.thumbnail.fields.file.url}}?w=1280&h=960&fm=jpg&fl=progressive&q=80&fit=fill&f=center"
                         alt="{{ recipe.title }}" loading="lazy">
                 </figure>
                 <!-- <a href="{{ recipe.title | slug }}">

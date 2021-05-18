@@ -5,14 +5,3 @@ a {
 .hero.is-info{
     background-color: #527457
 }
-
-
-.bg-img { 
-    background-image: url({{renderData.thumbnail}}) ; 
-    background-position: center center;
-    background-repeat:  no-repeat;
-    background-attachment: fixed;
-    background-size:  cover;
-    background-color: #527457;
-
-}
