@@ -1,0 +1,164 @@
+---
+permalink: "add/"
+layout: form.liquid
+
+renderData:
+    title: "Submit Recipe"
+    webTitle: "Festa di Famiglia"
+    webTitleSlug: "Festa-di-Famiglia"
+
+---
+<form class="box">
+
+<div class="field">
+  <label class="label">Title</label>
+  <div class="control">
+    <input class="input " type="text" placeholder="Ultimate Chocolate Chip Cookies" required minlength="3" maxlength="50">
+  </div>
+  <p class="help">Write Recipe Title here</p>
+</div>
+
+<div class="field">
+    <label class="label">Chef (optional)</label>
+    <div class="control">
+      <input class="input " type="text" placeholder="Bob smith or Bobbie or The Anonymous Cat" minlength="2" maxlength="25">
+    </div>
+    <p class="help">Please name who made the recipe (if you do not want to disclose name use a reconisable nickname )</p>
+  </div>
+
+  <div class="field">
+  <label class="label">Difficulty</label>
+  <div class="select" required>
+    <select>
+      <option>Easy</option>
+      <option>Medium</option>
+      <option>Hard</option>
+    </select>
+  </div>
+  <p class="help">How difficult is it to cook (Easy: a child can cook, Medium: the average adult can cook, Hard: reqiures cooking skill and/or preparation)</p>
+</div>
+
+<div class="field">
+    <label class="label">Image</label>
+    <div id="file-js-example" class="file has-name">
+        <label class="file-label">
+          <input class="file-input" type="file" name="resume" accept=".jpg, .jpeg, .png">
+          <span class="file-cta">
+            <span class="file-icon">
+              <i class="fas fa-upload"></i>
+            </span>
+            <span class="file-label">
+              Choose a file…
+            </span>
+          </span>
+          <span class="file-name">
+            No file uploaded
+          </span>
+        </label>
+      </div>
+      </div>
+        
+      <script>
+        const fileInput = document.querySelector('#file-js-example input[type=file]');
+        fileInput.onchange = () => {
+          if (fileInput.files.length > 0) {
+            const fileName = document.querySelector('#file-js-example .file-name');
+            fileName.textContent = fileInput.files[0].name;
+          }
+        }
+      </script>
+
+
+<div class="field">
+    <label class="label">Short Description</label>
+    <div class="control">
+      <input class="input " type="text" placeholder="Malaysian (spicy!) noodle soup. Based on a rich coconut milk curry, and served with your choice of protein and noodles." required minlength="3" maxlength="50">
+    </div>
+    <p class="help">Please write a description describing your recipe</p>
+  </div>
+
+  <div class="field">
+    <label class="label">Categories</label>
+  <div class="select is-multiple">
+    <select multiple size="8" required>
+      <option value="Vegan">Vegan</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Gluten Free">Gluten Free</option>
+      <option value="Dairy Free">Dairy Free</option>
+      <option value="entrée">entrée</option>
+      <option value="Main">Main</option>
+      <option value="Snack">Snack</option>
+      <option value="Dessert">Dessert</option>
+      <option value="Fast">Fast</option>
+      <option value="Chicken">Chicken</option>
+      <option value="Beef">Beef</option>
+      <option value="Pork">Pork</option>
+      <option value="Baking">Baking</option>
+      <option value="Spicy">Spicy</option>
+      <option value="Seafood">Seafood</option>
+      <option value="Pasta">Pasta</option>
+      <option value="Soup">Soup</option>
+      <option value="Traditional Italian">Traditional Italian</option>
+      <option value="Italian">Italian</option>
+      <option value="Vietnamese">Vietnamese</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Healthy">Healthy</option>
+      <option value="Simple">Simple</option>
+      <option value="Celiac">Celiac</option>
+      <option value="Salicylate">Salicylate</option>
+    </select>
+  </div>
+  <p class="help">Please select all that apply (atleast one), on pc hold Ctrl+click for more then one</p>
+</div>
+
+<div class="field">
+    <label class="label">Servings</label>
+    <div class="control">
+      <input class="input " type="number" placeholder="1"  min="1" max="1000" required>
+    </div>
+    <p class="help">add per person amount or per item amount</p>
+  </div>
+
+  <div class="field">
+    <label class="label">Prep Time</label>
+    <div class="control">
+      <input class="input" type="text" placeholder="20min"  minlength="3" maxlength="9" required>
+    </div>
+    <p class="help">please write prep time (Ex. 20min, 1.5hr 1day, 1hr 40min)</p>
+</div>
+  
+
+<div class="field">
+    <label class="label">Cooking Time</label>
+    <div class="control">
+      <input class="input " type="text" placeholder="1hr"  minlength="3" maxlength="9" required>
+    </div>
+    <p class="help">please write cooking time (Ex. 20min, 1.5hr 1day, 1hr 40min)</p>
+</div>
+
+<div class="field">
+    <label class="label">Instructions</label>
+<div class="control">
+    <textarea class="textarea has-fixed-size" placeholder="Fixed size textarea" rows="7" ></textarea>
+  </div>
+  <p class="help">Please write list of instructions on how to make recipe (After Every Step, pless ENTER/new line)</p>
+</div>
+
+<div class="field">
+    <label class="label">Chef's comments</label>
+<div class="control">
+    <textarea class="textarea has-fixed-size" placeholder="Fixed size textarea"></textarea>
+  </div>
+  <p class="help">(optional) could write recipe alterations or things to watch out for while making or things you could serve with...</p>
+</div>
+
+
+<div class="field">
+    <label class="label">Recipe Bio</label>
+    <div class="control">
+        <textarea class="textarea has-fixed-size" placeholder="Fixed size textarea"></textarea>
+      </div>
+      <p class="help">(optional) If there is a story behind the recipe, feel free to write it here (please do not disclose personal information like names)</p>
+    </div>
+
+</form>

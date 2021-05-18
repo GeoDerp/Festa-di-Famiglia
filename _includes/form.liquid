@@ -9,20 +9,7 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/{{renderData.webTitleSlug}}/css/base.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <style>
-        .bg-img {
-            background-image: url({{renderData.thumbnail}});
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-            background-color: #527457 !important;
-            background-blend-mode: multiply;
-
-        }
-    </style>
-</head>
-
+   
 <body>
     <header>
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -42,22 +29,20 @@
     </header>
     <main>
 
-        <section class="hero is-success is-halfheight bg-img">
+        <section class="hero is-info is-fullheight-with-navbar">
             <div class="hero-body">
-                <div class="">
-                    <p class="title">
+                <div class="container">
+                    <h1 class="title has-text-centered">
                         {{renderData.title}}
-                    </p>
-                    <p class="subtitle">
-                        {{renderData.subTitle}}
-                    </p>
+                    </h1>
+                    <div class="container">
+                        {{content}}
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="container">
-            {{content}}
-        </div>
+
 
     </main>
 </body>
