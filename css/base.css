@@ -8,7 +8,7 @@ a {
 
 
 .bg-img { 
-/*     background-image: url({{renderData.thumbnail}}) ; */
+    background-image: url({{renderData.thumbnail}}) ; 
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
