@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeoDerp/ZuccoRecipeBook.git"
+    "url": "git+https://github.com/GeoDerp/festa-di-famiglia.git"
   },
   "author": "Shy Ruparel, John Whately",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GeoDerp/ZuccoRecipeBook/issues"
+    "url": "https://github.com/GeoDerp/festa-di-famiglia/issues"
   },
-  "homepage": "https://github.com/GeoDerp/ZuccoRecipeBook",
+  "homepage": "https://github.com/GeoDerp/festa-di-famiglia",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "contentful": "^8.1.7",
