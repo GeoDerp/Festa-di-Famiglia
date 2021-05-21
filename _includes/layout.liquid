@@ -5,7 +5,7 @@
     {%- assign $title = renderData.title %}
     {%- assign $webTitle = renderData.webtitle %}
     <title>{{title}}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/{{renderData.webTitleSlug}}/css/base.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -28,24 +28,10 @@
             </div>
         </nav>
     </header>
-    <main>
 
+    {{content}}
 
-        <section class="hero is-info is-fullheight-with-navbar">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title has-text-centered">
-                        {{renderData.title}}
-                    </h1>
-                    {{content}}
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-</body>
-<footer class="footer">
+    <footer class="footer">
     <div class=" has-text-centered">
         <p>This Website is forked from Contentful <a href="https://github.com/contentful/11ty-contentful-gallery/"><i
                     class="fab fa-github is-large"></i></a></p>

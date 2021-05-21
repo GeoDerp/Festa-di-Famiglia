@@ -5,3 +5,8 @@ a {
 .hero.is-info{
     background-color: #527457
 }
+
+
+.is-green{
+    background-color: #527457 !important
+}

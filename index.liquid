@@ -1,6 +1,6 @@
 ---
 permalink: "/"
-layout: layout.liquid
+layout: recipe.liquid
 
 renderData:
     title: "Recipes"
@@ -9,10 +9,10 @@ renderData:
 
 ---
 
-<div class="columns is-multiline">
+<div class="columns is-multiline is-mobile">
     {%- for recipe in recipes-contentful -%}
-    <div class="column is-one-third ">
-        <a href="{{ recipe.title | slug }}">
+    <div class="column is-one-third-tablet is-half-mobile">
+        <a href="{{ recipe.title | slug }}" >
         <div class="card">
             <div class="card-image">
                 <figure class="image is-4by3">

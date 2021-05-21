@@ -5,8 +5,8 @@ pagination:
     alias: recipe
     addAllPagesToCollections: true
 permalink: "{{ recipe.title | slug }}/"
-tags: "recipe"
-layout: recipies.liquid
+tags: "recipe" 
+layout: recipes.liquid
 
 renderData:
     title: "{{ recipe.title }}"
@@ -35,13 +35,8 @@ renderData:
 </div>
 
 <div class="box">
-    <b>Categories:</b>&nbsp
-    {%- for categories in recipe.categories -%}
-    {{categories}}
-    {% if forloop.last == false %}
-    ,
-    {% endif %}
-    {%- endfor -%}
+     <b>Categories:</b>
+    {{ recipe.categories | join: ' , ' }}
 </div>
 
 <div class="box">
@@ -60,7 +55,7 @@ renderData:
 </div>
 
 <div class="box">
-    <b>servings:</b> {{ recipe.servings }}
+    <b>servings:</b> ≈{{ recipe.servings }}
 </div>
 
 <div class="box">
