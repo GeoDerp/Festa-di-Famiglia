@@ -1,38 +1,38 @@
-name: Eleventy Build on Contentful Publish Event
-on:
-    repository_dispatch:
-        types: [publish-event]
+# name: Eleventy Build on Contentful Publish Event
+# on:
+#     repository_dispatch:
+#         types: [publish-event]
 
-jobs:
-  deploy:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-18.04
+#     steps:
+#       - uses: actions/checkout@v2
       
-      - name: Create env file
-        run: |
-          touch .env
-          echo CTFL_SPACE=${{ secrets.CTFL_SPACE }} >> .env
-          echo CTFL_ACCESSTOKEN=${{ secrets.CTFL_ACCESSTOKEN }} >> .env
+#       - name: Create env file
+#         run: |
+#           touch .env
+#           echo CTFL_SPACE=${{ secrets.CTFL_SPACE }} >> .env
+#           echo CTFL_ACCESSTOKEN=${{ secrets.CTFL_ACCESSTOKEN }} >> .env
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
+#       - name: Setup Node
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '12.x'
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+#       - name: Cache dependencies
+#         uses: actions/cache@v1
+#         with:
+#           path: ~/.npm
+#           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+#           restore-keys: |
+#             ${{ runner.os }}-node-
 
-      - run: npm ci
-      - run: npm run build
+#       - run: npm ci
+#       - run: npm run build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: _site
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#           publish_dir: _site

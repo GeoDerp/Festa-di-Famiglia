@@ -5,12 +5,11 @@ A Static Recipe Website
 [11ty-contentful-gallery](https://github.com/contentful/11ty-contentful-gallery)  
 
 ### Powered by:
-- Github pages, 
-- Github actions, 
-- Bulma, 
-- eleventy (11ty), 
 - Contentful
-- a bit of AWS Lambda
+- eleventy (11ty), 
+- netlify, 
+- Github actions, 
+- Bulma,
 
 ## Things to do 
 - [ ] split the templates into sub templates as they are all using the same header and footer code

@@ -1,7 +1,7 @@
 {
   "name": "festa-di-famiglia",
   "version": "1.0.0",
-  "description": "Static Recipe Website Forked from Contentful powered by Github pages/actions and eleventy",
+  "description": "Static Recipe Website Forked from Contentful powered by Contenful and eleventy and Netlify",
   "main": "index.js",
   "scripts": {
     "build": "npx eleventy",
