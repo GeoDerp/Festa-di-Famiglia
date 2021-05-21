@@ -1,4 +1,4 @@
-# [Festa-di-Famiglia](https://geoderp.github.io/Festa-di-Famiglia/)
+# [Festa-di-Famiglia](https://festa-di-famiglia.netlify.app/)
 A Static Recipe Website  
 
 ### Forked from: 
