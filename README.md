@@ -12,6 +12,6 @@ A Static Recipe Website
 - Bulma,
 
 ## Things to do 
-- [ ] split the templates into sub templates as they are all using the same header and footer code
-- [ ] use a serverless service like aws to be the communication between the add recipe form and Contentful 
+- [x] split the templates into sub templates as they are all using the same header and footer code
+- [ ] use a serverless service like aws to be the communication between the add recipe form and Contentful (doing this with Netlify for this project)
 - [ ] add catagory slection on main page, probally with pagination of item pages 
