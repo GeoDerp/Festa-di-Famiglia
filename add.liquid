@@ -8,6 +8,7 @@ renderData:
     webTitleSlug: "Festa-di-Famiglia"
 
 ---
+<script src="netlify/functions/recipe-upload" defer></script>
 <form class="box">
 
 <div class="field">
@@ -62,12 +63,12 @@ renderData:
         const fileInput = document.querySelector('#js-image input[type=file]');
         fileInput.onchange = () => {
           if (fileInput.files.length > 0) {
-            if(fileInput.files[0].size > 200000 && fileInput.files[0].size < 2000000){
+            if(fileInput.files[0].size > 200000 && fileInput.files[0].size < 2500000){
             const fileName = document.querySelector('#js-image .file-name');
             fileName.textContent = fileInput.files[0].name;
             }
             else {
-              alert("Please select a a file arround 200kb to 2mb "); 
+              alert("Please select a a file arround 200kb to 3mb "); 
             }
           }
         }
@@ -166,8 +167,34 @@ renderData:
       <p class="help">(optional) If there is a story behind the recipe, feel free to write it here (please do not disclose personal information like names)</p>
     </div>
 
+    <div class="field">
+    <div class="field">
+    <label class="checkbox">
+    <input type="checkbox">
+    I agree to publish this recipe publicly   
+    </label>   
+    </div>  
+
+    <div class="field">
+    <label class="checkbox">
+    <input type="checkbox">
+    I agree this recipie was made/modified by me (not stright taken off the web)
+    </label>
+    </div> 
+
+    <div class="field">
+    <label class="checkbox">
+    <input type="checkbox">
+    I agree that if I uploaded a file that it is my own or a with a copyright that allows use on this website 
+    </label>
+    </div>
+    </div>
+
+    <div class="field">
     <div class="control">
     <button class="button is-green is-primary">Submit</button>
-  </div>    
+  </div> 
+  </div>
+       
 
 </form>

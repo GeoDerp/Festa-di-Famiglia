@@ -22,6 +22,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "contentful": "^8.1.7",
+    "contentful-management": "^7.22.1",
     "dotenv": "^8.2.0"
   }
 }

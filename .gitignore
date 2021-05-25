@@ -19,3 +19,6 @@ _site/
 
 #Ignore env file
 .env
+
+# Local Netlify folder
+.netlify

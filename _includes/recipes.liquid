@@ -2,33 +2,27 @@
 layout: layout.liquid
 
 ---
-<style>
-.bg-img {
-    background-image: url({{renderData.thumbnail}});
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-color: #527457 !important;
-    background-blend-mode: multiply;
-}
-</style>
-
     <main>
-        <section class="hero is-success is-halfheight bg-img">
+        <section class="hero is-info is-fullheight-with-navbar">
             <div class="hero-body">
-                <div class="">
-                    <p class="title">
+                <div class="container">
+                    <h1 class="title has-text-centered">
                         {{renderData.title}}
-                    </p>
-                    <p class="subtitle">
-                        {{renderData.subTitle}}
-                    </p>
+                    </h1>
+                    <div class="columns is-mobile is-centered">
+                    <div class="select is-rounded">
+                    <select onchange="location = this.value;">
+                        <option>Select category</option>
+                        <option value="/">All</option>
+                        {%- for category in collections.recipeTags -%}
+                        <option value="/categories/{{category | slug}}">{{category}}</option>
+                        {%- endfor -%}
+                    </select>
+                    </div>
+                    </div>
+                    </br>
+                    {{content}}
                 </div>
             </div>
         </section>
-
-        <div class="container">
-            {{content}}
-        </div>
     </main>

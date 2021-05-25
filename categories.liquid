@@ -1,16 +1,20 @@
 ---
-permalink: "/"
+pagination:
+    data: collections.recipeTags
+    size: 1
+    alias: category
+permalink: "categories/{{ category | slug }}/"
+tags: ['{{ category }}', 'categorie']
 layout: recipes.liquid
 
 renderData:
-    title: "Recipes"
+    title: "{{ category }}"
     webTitle: "Festa di Famiglia"
     webTitleSlug: "Festa-di-Famiglia"
-
 ---
-
 <div class="columns is-multiline is-mobile">
     {%- for recipe in recipesContentful -%}
+    {% if recipe.categories contains category %}
      <div class="column is-one-third-tablet is-half-mobile"> <!-- is-half-mobile is-one-quarter-widescreen-->
         <a href="recipe/{{ recipe.title | slug }}" >
         <div class="card">
@@ -44,5 +48,6 @@ renderData:
         </div>
         </a>
     </div>
+    {% endif %}
     {%- endfor -%}
 </div>

@@ -2,15 +2,33 @@
 layout: layout.liquid
 
 ---
+<style>
+.bg-img {
+    background-image: url({{renderData.thumbnail}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #527457 !important;
+    background-blend-mode: multiply;
+}
+</style>
+
     <main>
-        <section class="hero is-info is-fullheight-with-navbar">
+        <section class="hero is-success is-halfheight bg-img">
             <div class="hero-body">
-                <div class="container">
-                    <h1 class="title has-text-centered">
+                <div class="">
+                    <p class="title">
                         {{renderData.title}}
-                    </h1>
-                    {{content}}
+                    </p>
+                    <p class="subtitle">
+                        {{renderData.subTitle}}
+                    </p>
                 </div>
             </div>
         </section>
+
+        <div class="container">
+            {{content}}
+        </div>
     </main>

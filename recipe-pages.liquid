@@ -1,12 +1,11 @@
 ---
 pagination:
-    data: recipes-contentful
+    data: recipesContentful
     size: 1
     alias: recipe
-    addAllPagesToCollections: true
-permalink: "{{ recipe.title | slug }}/"
+permalink: "recipe/{{ recipe.title | slug }}/"
 tags: "recipe" 
-layout: recipes.liquid
+layout: recipe.liquid
 
 renderData:
     title: "{{ recipe.title }}"
