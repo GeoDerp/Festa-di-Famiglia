@@ -5,10 +5,10 @@ A Static Recipe Website
 [11ty-contentful-gallery](https://github.com/contentful/11ty-contentful-gallery)  
 
 ### Powered by:
-- Contentful
+- Contentful,
 - eleventy (11ty), 
 - netlify, 
-- Bulma,
+- Bulma
 
 ## Things to do 
 - [ ] add PWA support and have icon image
