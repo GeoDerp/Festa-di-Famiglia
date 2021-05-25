@@ -17,10 +17,6 @@ A Static Recipe Website
 - [ ] use a serverless service like aws to be the communication between the add recipe form and Contentful (doing this with Netlify for this project)
 - [ ] add basic install instructions (with screenshots)
 - [ ] make website more responsive (*mobile portrait = half, mobile landscape and tablet one-third, desktop and uo  one-quarter (currently have issues with bulma Breakpoints)*)
+- [ ] possibly add search bar for recipe titles, categories, chef, ingredients
 - [x] add catagory slection on main page, probally with pagination of item pages 
 - [x] split the templates into sub templates as they are all using the same header and footer code
-=======
-- [x] split the templates into sub templates as they are all using the same header and footer code
-- [ ] use a serverless service like aws to be the communication between the add recipe form and Contentful (doing this with Netlify for this project)
-- [ ] add catagory slection on main page, probally with pagination of item pages 
->>>>>>> 90a286b37ba58be3c1c3951c8f9aedbb4831a5e3
