@@ -8,7 +8,6 @@ A Static Recipe Website
 - Contentful
 - eleventy (11ty), 
 - netlify, 
-- Github actions, 
 - Bulma,
 
 ## Things to do 
