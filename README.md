@@ -12,7 +12,6 @@ A Static Recipe Website
 - Bulma,
 
 ## Things to do 
-<<<<<<< HEAD
 - [ ] add PWA support and have icon image
 - [ ] use a serverless service like aws to be the communication between the add recipe form and Contentful (doing this with Netlify for this project)
 - [ ] add basic install instructions (with screenshots)
