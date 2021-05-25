@@ -16,7 +16,7 @@ renderData:
     {%- for recipe in recipesContentful -%}
     {% if recipe.categories contains category %}
      <div class="column is-one-third-tablet is-half-mobile"> <!-- is-half-mobile is-one-quarter-widescreen-->
-        <a href="recipe/{{ recipe.title | slug }}" >
+        <a href="/recipe/{{ recipe.title | slug }}" >
         <div class="card">
             <div class="card-image">
                 <figure class="image is-4by3">

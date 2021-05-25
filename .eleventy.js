@@ -10,3 +10,4 @@ module.exports = function (eleventyConfig) {
     return Array.from(new Set(recipes.flatMap((r) => r.categories)));
   });
 }
+  
